@@ -148,8 +148,8 @@ def getBeijinTime():
         user_mi = sys.argv[1]
         # 登录密码
         passwd_mi = sys.argv[2]
-        user_list = user_mi.split('#')
-        passwd_list = passwd_mi.split('#')
+        user_list = user_mi.split('###')
+        passwd_list = passwd_mi.split('###')
         if len(user_list) == len(passwd_list):        
             if K != 1.0:
                 msg_mi =  "由于天气" + type + "，已设置降低步数,系数为" + str(K) + "。\n" 
